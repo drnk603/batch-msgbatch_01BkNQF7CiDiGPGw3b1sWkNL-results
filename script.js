@@ -51,7 +51,7 @@
 
     const validators = {
         email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-        phone: /^[\d\s\+\-\(\)]{10,20}$/,
+        phone: /^[\d\s+\-()]{10,20}$/,
         name: /^[a-zA-ZÀ-ÿ\s\-']{2,50}$/,
 
         validateEmail(value) {

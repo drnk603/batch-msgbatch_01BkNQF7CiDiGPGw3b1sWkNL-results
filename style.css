@@ -1043,9 +1043,7 @@ footer hr {
   background-color: var(--color-neutral-50);
 }
 
-.bg-dark {
-  background-color: var(--color-navy-900);
-}
+
 
 .bg-primary {
   background-color: var(--color-primary);
@@ -1207,6 +1205,7 @@ footer hr {
 
 .row.g-4 > * {
   margin-bottom: var(--space-lg);
+  width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -1448,5 +1447,21 @@ footer hr {
   a {
     color: black;
     text-decoration: underline;
+  }
+}
+/* AUTO-FIX: bg-dark improved contrast */
+.bg-dark > * {
+  color:white!important;
+}
+
+/* --- AUTO-INJECTED: AOS mobile/tablet override --- */
+@media (max-width: 1024px) {
+  [data-aos="fade-left"],
+  [data-aos="fade-right"] {
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+  }
+  .c-logo__img {
+    display: none!important;
   }
 }
